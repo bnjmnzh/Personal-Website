@@ -11,22 +11,23 @@ body {
 
 .nav {
     float: left;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .nav li {
-    margin: 5px;
     padding: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
     display: block;
 }
 
 .nav li a{
     font-family: 'Lato', sans-serif;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
-    border: solid, 2px;
     line-height: 10px;
+    text-align: center;
 }
 
 .nav li a:link {color:#000000;}      
@@ -42,7 +43,7 @@ body {
     margin-top: 40px;
     margin-bottom: 35px;
     margin-left: 10px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .title a {
@@ -149,7 +150,6 @@ body {
     margin:0px;
 }
 
-
 .about {
     float: left;
     padding: 20px;
@@ -159,24 +159,38 @@ body {
 
 @media screen and (min-width:0px) and (max-width:320px){
     .title {
-	    width: 125px;
+        margin-top: 30px;
+        margin-left: 1px;
+        margin-right: 0px;
+        padding: 5px;
+	    width: 110px;
     }
 
     .nav{
-	    float: left;
-	}
+	    float: right;
+    }
+    
     
     .title a {
-        font-size: 20px;
+        font-size: 16px;
+        font-weight: 300;
     }
 
 	.headercard {
 	    display: none;
     }
     
+    .cards {
+        position: absolute;
+        text-align: center;
+        top: 35%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+
     .cards li {
 	    display: inline;
-	    padding: 1px;
+	    padding: 75px;
     }
 
 }
@@ -191,16 +205,28 @@ body {
 	}
 	
 	.title {
-	    width: 175px;
+        margin-top: 30px;
+        margin-left: 1px;
+        margin-right: 0px;
+        padding: 5px;
+	    width: 130px;
     }
     
     .title a {
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    .cards {
+        position: absolute;
+        text-align: center;
+        top: 30%;
+        left: 25%;
+        transform: translate(-50%, -50%);
     }
 	
 	.cards li {
 	    display: inline;
-	    padding: 2px;
+	    padding: 50px;
     }
     
     .headercard {
