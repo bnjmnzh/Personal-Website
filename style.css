@@ -64,13 +64,13 @@ body {
     position: absolute;
     text-align: center;
     top: 30%;
-    left: 35%;
+    left: 30%;
     transform: translate(-50%, -50%);
 }
 
 .cards li {
     display: inline;
-    padding: 20px;
+    padding: 15px;
 }
 
 .cards li a {
