@@ -158,24 +158,45 @@ body {
 }
 
 @media screen and (min-width:0px) and (max-width:320px){
+    .title {
+	    width: 125px;
+    }
+
+    .nav{
+	    float: left;
+	}
+    
+    .title a {
+        font-size: 20px;
+    }
+
 	.headercard {
 	    display: none;
-	}
+    }
+    
+    .cards li {
+	    display: inline;
+	    padding: 1px;
+    }
 
 }
 
 @media screen and (min-width:320px) and (max-width:768px){
 	.header{
-	    width:100%;
+	    width: 100%;
 	}
 	
 	.nav{
 	    float: left;
 	}
 	
-	.title{
-	    width: 250px;
-	}
+	.title {
+	    width: 175px;
+    }
+    
+    .title a {
+        font-size: 25px;
+    }
 	
 	.cards li {
 	    display: inline;
