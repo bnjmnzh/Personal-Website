@@ -44,6 +44,10 @@ body {
   display: flex;
 }
 
+.nav a:hover img {
+  opacity: .5;
+}
+
 .card-box {
   display: grid; 
   grid-template-columns: 1fr; 
