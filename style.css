@@ -117,15 +117,9 @@ body {
 }
 
 .about-container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 0.5fr 2fr 0.5fr;
+    display: grid;
     gap: 0px 0px;
-    grid-template-areas: 
-      ". . ."
-      "name about-paragraph nav"
-      ". . .";
-  }
+}
 
 .about-paragraph {
     grid-area: about-paragraph;
@@ -151,7 +145,7 @@ body {
     opacity: .5;
   }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
     /* Your styles for desktop screens */
     p {
         word-spacing: 5px;
@@ -160,7 +154,7 @@ body {
     }
 
     .container {
-        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-columns: 0.85fr 1.3fr 0.85fr; 
         grid-template-rows: 0.5fr 2fr 0.5fr;
         grid-template-areas: 
           ". . ."
@@ -195,28 +189,85 @@ body {
         -webkit-transform: rotate(5deg);
         opacity: 1;
     }
+
+    .about-container {
+      grid-template-columns: 0.85fr 1.3fr 0.85fr;
+      grid-template-rows: 0.5fr 2fr 0.5fr;
+      grid-template-areas: 
+        ". . ."
+        "name about-paragraph nav"
+        ". . .";
+    }
 }
 
-@media screen and (max-width: 1260px) {
-    /* Your styles for tablets in portrait mode */
-    .container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.6fr 0.4fr;
-        grid-template-areas: 
-          ". . "
-          "name nav";
-      }
+@media screen and (max-width: 1430px) {
+  .container {
+    grid-template-columns: 0.5fr 2fr 0.5fr; 
+  }
 
-      .card-box {
-        display: none;
-    }
+  .about-container {
+    grid-template-columns: 0.85fr 1.3fr 0.85fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-areas: 
+      ". . ."
+      "name about-paragraph nav"
+      ". . .";
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  /* Your styles for tablets in portrait mode */
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.6fr 0.4fr;
+    grid-template-areas: 
+      ". . "
+      "name nav";
+  }
+
+  .card-box {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+  .about-container {
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+      ". name ."
+      ". about-paragraph ."
+      ". nav .";
+  }
+
+  .about-paragraph {
+    margin: 0;
+  }
+
+  body {
+    overflow: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
     /* Your styles for mobile devices in landscape mode */
     .container {
         grid-template-rows: 0.8fr 0.2fr;
-      }
+    }
+
+    .about-container {
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+        "name"
+        "about-paragraph"
+        "nav";
+    }
+
+    .about-paragraph {
+      margin: 5%;
+    }
 }
 
 @media screen and (max-width: 720px) {
